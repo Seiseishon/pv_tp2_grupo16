@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 16 - Sumar Rango</title>
+</head>
+<body>
+
+    <script>
+        const sumarRango = (inicio, fin) => {
+            let suma = 0;
+            for (let i = inicio; i <= fin; i++) {
+                suma += i;
+            }
+            return suma;
+        };
+
+        const numInicial = parseInt(prompt("Ingrese el número inicial:"));
+        const numFinal = parseInt(prompt("Ingrese el número final:"));
+
+        if (numInicial <= numFinal) {
+            const resultado = sumarRango(numInicial, numFinal);
+            
+            document.write(`<h1>Resultado</h1>`);
+            document.write(`<p>La suma de los números entre ${numInicial} y ${numFinal} es: <strong>${resultado}</strong></p>`);
+            
+            console.log(`La suma del rango [${numInicial}, ${numFinal}] es: ${resultado}`);
+        } else {
+            document.write(`<p style="color: red;">Error: El número inicial debe ser menor o igual que el final.</p>`);
+        }
+    </script>
+    
+</body>
+</html>

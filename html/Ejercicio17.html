@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 18 - Contar Letra A</title>
+</head>
+<body>
+
+    <script>
+        const contarLetraA = (texto) => {
+            let contador = 0;
+            for (let i = 0; i < texto.length; i++) {
+                if (texto[i] === 'a' || texto[i] === 'A') {
+                    contador++;
+                }
+            }
+            return contador;
+        };
+
+        const frase = prompt("Ingrese una palabra o frase:");
+
+        if (frase !== null) {
+            const cantidad = contarLetraA(frase);
+
+            document.write(`<h1>Contador de Letras</h1>`);
+            document.write(`<p>En el texto: "<em>${frase}</em>"</p>`);
+            document.write(`<p>La letra 'a' aparece: <strong>${cantidad}</strong> veces.</p>`);
+
+            console.log(`Texto: ${frase} | Cantidad de 'a': ${cantidad}`);
+        }
+    </script>
+    
+</body>
+</html>
