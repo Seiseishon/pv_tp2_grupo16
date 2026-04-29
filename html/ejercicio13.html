@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arreglo = []
+        let longitud = parseInt(prompt(`¿Cuantos numero va a ingresar?`));
+        let mostrarArreglo = (lista) => {
+            for (let i = 0;i<longitud;i = i + 1) {
+            arreglo.push(parseInt(prompt(`Ingrese un numero`)));
+            }
+            lista.forEach(num => {
+                alert(`${num}`);
+            });
+        }
+        mostrarArreglo(arreglo);
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let numeros = [];
+        let longitud = parseInt(prompt(`¿Cuatos numeros va a ingresar?`));
+
+        let duplicar = (multiplicacion) => {
+            for (let i = 0;i<longitud;i++) {
+                numeros.push(parseInt(prompt(`Ingrese un numero`)));
+            }
+            let porDos = numeros.map(x => x * 2);
+            alert(`${porDos}`);
+        }
+        duplicar(numeros);
+    </script>
+</body>
+</html>
