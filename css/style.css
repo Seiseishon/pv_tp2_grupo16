@@ -1,3 +1,49 @@
+/*Ejercicio 23 */
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    background-color: #f0f0f0;
+}
+
+h1 {
+    color: #333;
+}
+
+input {
+    padding: 10px;
+    font-size: 16px;
+    width: 300px;
+    border: 2px solid #aaa;
+    border-radius: 8px;
+    outline: none;
+    margin-bottom: 20px;
+}
+
+input:focus {
+    border-color: #4a90d9;
+}
+
+#resultado {
+    padding: 15px 20px;
+    font-size: 18px;
+    width: 300px;
+    min-height: 50px;
+    border-radius: 8px;
+    background-color: #e8f5e9;
+    color: #333;
+    transition: background-color 0.3s;
+}
+
+#aviso {
+    margin-top: 10px;
+    font-size: 13px;
+    color: #888;
+}
+
 /* Ejercicio 24 */
 * {
     margin: 0;
