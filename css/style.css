@@ -109,3 +109,31 @@ button:hover {
 button:active {
     transform: scale(0.98);
 }
+/* ejercicio 22 */
+
+.form-input {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    max-width: 100%;
+
+}
+#txtInput {
+    text-align: center;
+    border: none;
+    margin-bottom: 40px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    max-width: 100%;
+}
+#txtInput:focus {
+    outline: none;
+}
+#txtOutput {
+    background-color: white;
+    border-radius:  5px;
+    font-size: 1.2rem;
+    max-width: 100%;
+    word-break: break-all;
+    overflow-wrap: break-word;
+}
