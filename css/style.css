@@ -184,6 +184,19 @@ button:active {
     overflow-wrap: break-word;
 }
 /* ejercicio 21 */
+.form-group {
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    text-align: left;
+}
+
+label {
+    font-weight: bold;
+    color: #555;
+}
+
 select {
     padding: 8px;
     border: 1px solid #e0d4f7;
