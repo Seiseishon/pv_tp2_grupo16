@@ -183,3 +183,20 @@ button:active {
     word-break: break-all;
     overflow-wrap: break-word;
 }
+/* ejercicio 21 */
+select {
+    padding: 8px;
+    border: 1px solid #e0d4f7;
+    border-radius: 8px;
+    font-size: 1rem;
+    width: 100%;
+    background-color: #f8f6ff;
+}
+
+#mensaje {
+    margin-top: 16px;
+    color: #6a11cb;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
