@@ -1,16 +1,16 @@
 const login = document.querySelector('.login');
-const name = document.querySelector('.name');
-const lastName = document.querySelector('.last-name');
-const lu = document.querySelector('.lu');
+const inputName = document.querySelector('.input-name');
+const lastName = document.querySelector('.input-last-name');
+const lu = document.querySelector('.input-lu');
 
 login.addEventListener('submit', (e) => {
     e.preventDefault();
 
-    if (name.value == "" || lastName == "" || lu == "") {
+    if (inputName.value == "" || lastName.value == "" || lu.value == "") {
         alert('Algunos campos estan nulos');
     }else{
         alert(`Los datos ingresados son: 
-            Nombre: ${name.value} 
+            Nombre: ${inputName.value} 
             Apellido: ${lastName.value} 
             Libreta Universitaria: APU${lu.value}`)
     }
